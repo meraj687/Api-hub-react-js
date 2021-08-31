@@ -1,0 +1,9 @@
+ .images {
+    width: 50%; /*image width*/
+    float: left; /*image position*/
+  }
+ 
+  .imagebox p{
+   color: white;
+   
+  }

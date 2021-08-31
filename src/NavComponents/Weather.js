@@ -29,7 +29,7 @@ function Weather() {
   return (
     <div className='main_div'>
       <div className='center_div'>
-        <h1>WEATHER API</h1>
+        {/* <h1>WEATHER</h1> */}
         <br />
         <input
           type='search'
@@ -37,7 +37,7 @@ function Weather() {
           id=''
           value={search}
           onChange={inputEvent}
-          style={{ color: 'black' }}
+          style={{ color: 'whitesmoke' }}
         />
         {!city ? (
           <p>

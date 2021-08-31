@@ -6,7 +6,7 @@ function Search() {
   const [input, output] = useState('')
 
   const inputEvent = (event) => {
-    console.log(event.target.value)
+    // console.log(event.target.value)
     output(event.target.value)
   }
   return (

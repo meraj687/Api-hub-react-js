@@ -9,7 +9,7 @@ function CoronavirusApi() {
   useEffect(() => {
     async function getData() {
       const res = await axios.get('https://api.covid19api.com/summary')
-      console.log(res.data.Global)
+      // console.log(res.data.Global)
       output(res.data.Global)
     }
     getData()
@@ -17,7 +17,7 @@ function CoronavirusApi() {
   return (
     <div className='main_div'>
       <div className='center_div'>
-        <h1>CORONAVIRUS API</h1>
+        {/* <h1>CORONAVIRUS API</h1> */}
         <br />
         {!input ? (
           <p>Something went wrong</p>

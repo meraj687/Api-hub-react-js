@@ -5,7 +5,10 @@ import Accenture from '../NavComponents/Accenture'
 import CoronavirusApi from '../NavComponents/CoronavirusApi'
 import CryptoCurr from '../NavComponents/CryptoCurr'
 import Date_time from '../NavComponents/Date_time'
+import Jokes from '../NavComponents/Jokes'
+import News from '../NavComponents/News'
 import Search from '../NavComponents/Search'
+import StateWiseCovid from '../NavComponents/StateWiseCovid'
 import Weather from '../NavComponents/Weather'
 import '../NavTab/Tab.css'
 
@@ -16,7 +19,7 @@ function NavbarTab() {
         <Container>
           <Link to='/' style={{ textDecoration: 'none' }}>
             <Navbar.Brand href='#home' className='neon'>
-              ACCENTURE
+              API FUN ZONE
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -43,6 +46,24 @@ function NavbarTab() {
               <Link to='/date' className='header__link'>
                 <Nav.Link href='#dt' style={{ textDecoration: 'none' }}>
                   DATE TIME
+                </Nav.Link>
+              </Link>
+              <Link to='/news' className='header__link'>
+                <Nav.Link href='#news' style={{ textDecoration: 'none' }}>
+                  TECH NEWS
+                </Nav.Link>
+              </Link>
+              <Link to='/covid2021' className='header__link'>
+                <Nav.Link
+                  href='#coronavirus'
+                  style={{ textDecoration: 'none' }}
+                >
+                  CORONAVIRUS COUNTRY WISE
+                </Nav.Link>
+              </Link>
+              <Link to='/jokes' className='header__link'>
+                <Nav.Link href='#jokes' style={{ textDecoration: 'none' }}>
+                  JOKES
                 </Nav.Link>
               </Link>
               {/* <NavDropdown title='Dropdown' id='collasible-nav-dropdown'>
@@ -75,6 +96,9 @@ function NavbarTab() {
       <Route path='/crypto' component={CryptoCurr} exact />
       <Route path='/' component={Accenture} exact />
       <Route path='/date' component={Date_time} exact />
+      <Route path='/news' component={News} exact />
+      <Route path='/covid2021' component={StateWiseCovid} />
+      <Route path='/jokes' component={Jokes} />
 
       <Redirect path='/' />
     </div>

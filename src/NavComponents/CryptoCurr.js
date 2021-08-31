@@ -15,7 +15,7 @@ function CryptoCurr() {
       )
       .then((res) => {
         setCoins(res.data)
-        console.log(res.data)
+        // console.log(res.data)
       })
       .catch((error) => console.log(error))
   }, [])
@@ -29,7 +29,7 @@ function CryptoCurr() {
   )
 
   return (
-    <div className='coin-app'>
+    <div className='coin-app '>
       <div className='coin-search'>
         <h1
           className='coin-text'
