@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Heroku : https://sigmaapi.herokuapp.com/jokes
+Heroku :https://sigmaapi.herokuapp.com/
 
 ## Available Scripts
 
