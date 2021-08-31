@@ -4,7 +4,7 @@ import '../NavComponents/Footer.css'
 function Footer() {
   return (
     <div className='footer'>
-      <h1 style={{ fontSize: '20px' }}>@ 2020 Copyright MDAryaan.com</h1>
+      <h1 style={{ fontSize: '20px' }}>@ 2021 Copyright MDAryaan.com</h1>
       <p className='neon'>
         <FaFacebook /> <FaGithub /> <FaTwitter /> <FaInstagram />
       </p>
