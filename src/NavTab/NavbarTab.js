@@ -19,7 +19,7 @@ function NavbarTab() {
         <Container>
           <Link to='/' style={{ textDecoration: 'none' }}>
             <Navbar.Brand href='#home' className='neon'>
-              API FUN ZONE
+              PROJECT XXX
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />

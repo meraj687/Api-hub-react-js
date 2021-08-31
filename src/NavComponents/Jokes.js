@@ -7,17 +7,29 @@ import { Table } from 'react-bootstrap'
 
 function Jokes() {
   const [users, setUsers] = useState([])
+  const [usersone, setUsersOne] = useState([])
 
   const loadUser = async () => {
     const result = await axios.get(
       'https://official-joke-api.appspot.com/jokes/programming/random'
     )
-    console.log(result.data)
+    // console.log(result.data)
     setUsers(result.data[0])
+  }
+  const anotherloadUser = async () => {
+    const resultone = await axios.get(
+      'https://official-joke-api.appspot.com/random_joke'
+    )
+    // console.log(resultone.data)
+    setUsersOne(resultone.data)
   }
 
   useEffect(() => {
     loadUser()
+  }, [])
+
+  useEffect(() => {
+    anotherloadUser()
   }, [])
   return (
     <>
@@ -51,6 +63,12 @@ function Jokes() {
             <td>{users.type}</td>
             <td>{users.setup}</td>
             <td>{users.punchline}</td>
+          </tr>
+          <tr>
+            <td>{usersone.id}</td>
+            <td>{usersone.type}</td>
+            <td>{usersone.setup}</td>
+            <td>{usersone.punchline}</td>
           </tr>
         </tbody>
       </Table>

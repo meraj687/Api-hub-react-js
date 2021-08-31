@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './NavComponents/Footer'
 import NavbarTab from './NavTab/NavbarTab'
 // import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 // import './NavTab/Tab.css'
@@ -19,7 +20,10 @@ function App() {
     //     </Container>
     //   </Navbar>
     // </div>
-    <NavbarTab />
+    <>
+      <NavbarTab />
+      <Footer />
+    </>
   )
 }
 

@@ -17,6 +17,7 @@ function Search() {
         onChange={inputEvent}
         value={input}
         className='coin-input'
+        style={{ width: '100%' }}
       />
       <Sresult name={input} />
     </div>
