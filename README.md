@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Netlify : https://api-fun-zone-react-js.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
